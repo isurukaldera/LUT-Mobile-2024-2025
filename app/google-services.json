@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348483491381",
+    "project_id": "lut-mobile-2024-2025-2",
+    "storage_bucket": "lut-mobile-2024-2025-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348483491381:android:c4ae8e394425767c82437c",
+        "android_client_info": {
+          "package_name": "com.example.lutmobile2024_2025"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClkG9_0Grn49ypss-P-XwXgoiiF4s4D_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,16 +9,17 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://jitpack.io") }
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+            maven { url = uri("https://jitpack.io") }
+        }
     }
-}
 
-rootProject.name = "LUT Mobile 2024-2025"
-include(":app")
- 
+    rootProject.name = "LUT Mobile 2024-2025"
+    include(":app")
