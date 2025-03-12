@@ -1,4 +1,4 @@
-package com.example.lutmobile2024_2025;
+package com.example.lutmobile2024_2025.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
