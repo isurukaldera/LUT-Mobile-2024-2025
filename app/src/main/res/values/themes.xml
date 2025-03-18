@@ -2,4 +2,8 @@
 <resources>
 
     <style name="Theme.LUTMobile20242025" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="ShapeAppearanceOverlay.App.circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
 </resources>
