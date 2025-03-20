@@ -11,10 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lutmobile2024_2025.Adapter.CategoryAdapter;
+import com.example.lutmobile2024_2025.Adapter.PopularAdapter;
 import com.example.lutmobile2024_2025.Model.CategoryModel;
+import com.example.lutmobile2024_2025.Model.ItemModel;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,6 +36,39 @@ public class MainActivity extends BaseActivity {
         setContentView(binding.getRoot());
 
         initCategory();
+        initPopular();
+    }
+
+    private void initPopular() {
+        DatabaseReference myRef=database.getReference("Popular");
+        binding.progressBarPopular.setVisibility(View.VISIBLE);
+
+        ArrayList<ItemModel> list=new ArrayList<>();
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    for(DataSnapshot issue:snapshot.getChildren()){
+                        list.add(issue.getValue(ItemModel.class));
+
+                    }
+
+                    if (!list.isEmpty()){
+                        binding.recyclerViewPopular.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                        RecyclerView.Adapter adapter=new PopularAdapter(list);
+                        binding.recyclerViewPopular.setAdapter(adapter);
+
+
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private void initCategory() {
