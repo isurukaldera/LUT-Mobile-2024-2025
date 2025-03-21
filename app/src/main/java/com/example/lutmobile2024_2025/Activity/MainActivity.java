@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.GridLayout;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,12 +56,12 @@ public class MainActivity extends BaseActivity {
                     }
 
                     if (!list.isEmpty()){
-                        binding.recyclerViewPopular.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                        binding.recyclerViewPopular.setLayoutManager(new LinearLayoutManager(MainActivity.this,
+                                LinearLayoutManager.HORIZONTAL,false));
                         RecyclerView.Adapter adapter=new PopularAdapter(list);
                         binding.recyclerViewPopular.setAdapter(adapter);
-
-
                     }
+                    binding.progressBarPopular.setVisibility(View.GONE)
                 }
             }
 

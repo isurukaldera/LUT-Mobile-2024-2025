@@ -5,28 +5,28 @@
     android:id="@+id/home"
     android:icon="@drawable/neon_button_bg"
     android:title="Home"
-    app:cnb_backgroundColor="@color/black"
+    app:cnb_backgroundColor="@color/neon_blue"
     app:cnb_iconColor="@color/white"
     />
     <item
         android:id="@+id/explorer"
         android:icon="@drawable/neon_button_bg"
         android:title="Explorer"
-        app:cnb_backgroundColor="@color/black"
+        app:cnb_backgroundColor="@color/neon_blue"
         app:cnb_iconColor="@color/white"
         />
     <item
         android:id="@+id/bookmark"
         android:icon="@drawable/neon_button_bg"
         android:title="Bookmark"
-        app:cnb_backgroundColor="@color/black"
+        app:cnb_backgroundColor="@color/neon_blue"
         app:cnb_iconColor="@color/white"
         />
     <item
         android:id="@+id/profile"
         android:icon="@drawable/neon_button_bg"
         android:title="Profile"
-        app:cnb_backgroundColor="@color/black"
+        app:cnb_backgroundColor="@color/neon_blue"
         app:cnb_iconColor="@color/white"
         />
 </menu>
