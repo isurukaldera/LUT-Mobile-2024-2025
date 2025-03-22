@@ -1,9 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base application theme -->
+    <style name="Theme.LUTMobile20242025" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryDark">@color/dark_neon_blue</item>
+        <item name="colorAccent">@color/neon_green</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
 
-    <style name="Theme.LUTMobile20242025" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Shape Appearance Styles -->
     <style name="ShapeAppearanceOverlay.App.circleImageView" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="CornerImageView5dp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
     </style>
 </resources>
