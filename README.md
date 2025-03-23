@@ -1,5 +1,6 @@
 # LUT-Mobile-2024-2025
 Lut University Project/Software Development Skills: Mobile 2024-2025
+**CHECK BRANCHES**
 
  you have to installed the following on your system:
 * Android Studio: The official IDE for Android development.
